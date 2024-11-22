@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@400;500;800&family=Merriweather:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="boton-animado.css" />
+    <title>My Web Page - Moises</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./media/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="title">
+          <h1>Moises Sanchez (moeDev)<i class="fa-solid fa-code"></i></h1>
+        </div>
+        <ul class="contenido">
+          <li><a href="#about">Info</a></li>
+          <li><a href="#educacion">Educacion</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <h1>Hello My Friends!</h1>
+        <hr />
+      </div>
+    </header>
+    <main>
+      <div class="info" id="about">
+        <p>
+          Soy estudiante de Ingeniería de Sistemas e Informática, y actualmente
+          estudio en la Universidad Tecnológica del Perú. <br />Soy un
+          apasionado por la programación y el desarrollo de software. Tengo
+          experiencia en el uso de lenguajes como <br />Python y JavaScript,
+          además de un fuerte interés en bases de datos y desarrollo web.
+        </p>
+        <img src="./media/image.png" width="840px" height="500px" />
+      </div>
+      <div class="table-container" id="educacion">
+        <table>
+          <h2>Educación</h2>
+          <thead>
+            <tr>
+              <th>Cursos</th>
+              <th>Ciclo</th>
+              <th>Nota</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matematicas</td>
+              <td>5</td>
+              <td>15</td>
+              <td><span class="status active">Aprobado</span></td>
+            </tr>
+            <tr>
+              <td>Algoritmos</td>
+              <td>4</td>
+              <td>18</td>
+              <td><span class="status active">Aprobado</span></td>
+            </tr>
+            <tr>
+              <td>Historia</td>
+              <td>6</td>
+              <td>11</td>
+              <td><span class="status inactive">Desaprobado</span></td>
+            </tr>
+            <tr>
+              <td>Biologia</td>
+              <td>5</td>
+              <td>16</td>
+              <td><span class="status active">Aprobado</span></td>
+            </tr>
+            <tr>
+              <td>Quimica</td>
+              <td>4</td>
+              <td>10</td>
+              <td><span class="status inactive">Desaprobado</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="video">
+        <video
+          src="./media/¿Estás listo para la siguiente ola_.mp4"
+          controls
+          muted
+        ></video>
+      </div>
+
+      <div class="skills-list">
+        <div class="title"><h3>Skills</h3></div>
+        <p>
+          <i class="fas fa-check-circle"></i>Administrar las redes y los
+          sistemas de información<br />
+          <i class="fas fa-check-circle"></i>Desarrollo de Software<br />
+          <i class="fas fa-check-circle"></i>Consultoria de Tecnologías<br />
+          <i class="fas fa-check-circle"></i>Diseñar programas o aplicaciones<br />
+        </p>
+      </div>
+
+      <div class="grid-section">
+        <h3>Favorite Games</h3>
+        <div class="grid-container">
+          <div class="grid-item gtav">GTA V</div>
+          <div class="grid-item fornite">Fornite</div>
+          <div class="grid-item log">League of Legends</div>
+          <div class="grid-item crash">Crash Carreras</div>
+          <div class="grid-item minecraft">Minecraft</div>
+          <div class="grid-item mobile">Mobile Legends</div>
+        </div>
+      </div>
+
+      <div class="form-container" id="contact">
+        <h3>Contacto</h3>
+        <form class="form-contact">
+          <div class="input-group">
+            <input type="text" id="nombre" />
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" />
+            <label for="email">Correo Electrónico</label>
+          </div>
+          <div class="input-group">
+            <input type="tel" id="telefono" />
+            <label for="telefono">Teléfono</label>
+          </div>
+          <div class="input-group">
+            <textarea id="mensaje" rows="4"></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+          <div class="contenedor-botones">
+            <button class="boton seis" type="submit">
+              <span>Enviar Mensaje</span>
+              <svg>
+                <rect x="0" y="0" fill="none"></rect>
+              </svg>
+            </button>
+          </div>
+          <!--<button type="submit">Enviar mensaje</button>-->
+        </form>
+      </div>
+
+      <form id="loginForm">
+        <input
+          type="text"
+          id="usuario"
+          onchange="validarUsuario()"
+          placeholder="Tu nombre de usuario"
+        />
+        <input
+          type="password"
+          id="contraseña"
+          onchange="validarContraseña()"
+          placeholder="Tu contraseña"
+        />
+        <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+      </form>
+
+      <div class="container-register">
+        <button onclick="formularioRegistro()">Registrate aqui!</button>
+        <button onclick="modificarEstiloFormulario()">
+          Cambiar Estilo del Formulario
+        </button>
+      </div>
+    </main>
+
+    <div id="contenido"></div>
+    <div class="container-button">
+      <button onclick="añadirElemento()" class="boton-añadir">
+        Añadir Parrafo
+      </button>
+      <button onclick="eliminarElemento()" class="boton-eliminar">
+        Eliminar parrafo
+      </button>
+      <button onclick="vaciarContenido()" class="boton-vaciar">
+        Vaciar contenido
+      </button>
+    </div>
+    <footer>
+      <div>
+        <h2 class="question">Para mas información</h2>
+        <p class="follow">
+          Sígueme en mi viaje de codificación en Github y Codecademy.
+        </p>
+      </div>
+      <div class="logo">
+        <a href="https://www.codecademy.com/profiles/moeDev" target="_blank"
+          ><img
+            class="codecademy"
+            alt="Codecademy Logo"
+            src="./media/codecademy-logo.png"
+            title="codecademy"
+        /></a>
+        <a
+          href="https://github.com/MSanchezVasquez/MSanchezVasquez.github.io"
+          target="_blank"
+          ><img
+            class="github"
+            alt="GitHub Logo"
+            src="./media/github_icon.png"
+            title="GitHub"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="form-validation.js"></script>
+    <script src="form-register.js"></script>
+    <script src="form-login.js"></script>
+    <script src="modificar-form.js"></script>
+    <script src="agregar-div.js"></script>
+  </body>
+</html>

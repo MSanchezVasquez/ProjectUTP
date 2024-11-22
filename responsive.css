@@ -1,0 +1,85 @@
+@media (max-width: 1024px) {
+  header,
+  main,
+  footer {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido li {
+    padding-bottom: 5px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .info img,
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .skills-list {
+    width: 100%;
+  }
+
+  .form-container form {
+    width: 100%;
+  }
+
+  footer {
+    margin: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Encabezado y título más pequeño en móviles */
+  .navbar .title h1 {
+    font-size: 1.2em;
+  }
+
+  .info p {
+    font-size: 0.9em;
+  }
+
+  /* Footer en columnas */
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .question {
+    color: brown;
+    font-size: 1.1em;
+  }
+  .follow {
+    font-size: 0.8em;
+  }
+
+  .codecademy,
+  .github {
+    font-size: 1em;
+    height: 20px;
+    width: 30px;
+    padding-right: 8px;
+  }
+}
