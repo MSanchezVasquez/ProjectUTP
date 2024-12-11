@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="boton-animado.css" />
+    <link rel="stylesheet" href="list-to-do.css" />
     <title>My Web Page - Moises</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./media/favicon.ico" type="image/x-icon" />
@@ -126,6 +127,21 @@
         </div>
       </div>
 
+      <div id="task-container">
+        <h3>Lista de Tareas</h3>
+        <div class="input-task">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Escribe tu tarea..."
+          />
+          <button onclick="addTask()" class="add-task-button">
+            <i class="fas fa-plus-circle"></i> Añadir Tarea
+          </button>
+        </div>
+        <ul id="task-list"></ul>
+      </div>
+
       <div class="form-container" id="contact">
         <h3>Contacto</h3>
         <form class="form-contact">
@@ -157,42 +173,13 @@
         </form>
       </div>
 
-      <form id="loginForm">
-        <input
-          type="text"
-          id="usuario"
-          onchange="validarUsuario()"
-          placeholder="Tu nombre de usuario"
-        />
-        <input
-          type="password"
-          id="contraseña"
-          onchange="validarContraseña()"
-          placeholder="Tu contraseña"
-        />
-        <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
-      </form>
-
       <div class="container-register">
-        <button onclick="formularioRegistro()">Registrate aqui!</button>
         <button onclick="modificarEstiloFormulario()">
           Cambiar Estilo del Formulario
         </button>
       </div>
     </main>
 
-    <div id="contenido"></div>
-    <div class="container-button">
-      <button onclick="añadirElemento()" class="boton-añadir">
-        Añadir Parrafo
-      </button>
-      <button onclick="eliminarElemento()" class="boton-eliminar">
-        Eliminar parrafo
-      </button>
-      <button onclick="vaciarContenido()" class="boton-vaciar">
-        Vaciar contenido
-      </button>
-    </div>
     <footer>
       <div>
         <h2 class="question">Para mas información</h2>
@@ -219,9 +206,8 @@
     </footer>
 
     <script src="form-validation.js"></script>
-    <script src="form-register.js"></script>
-    <script src="form-login.js"></script>
     <script src="modificar-form.js"></script>
-    <script src="agregar-div.js"></script>
+    <script src="list-to-do.js"></script>
+    <script></script>
   </body>
 </html>
